@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/991d0748-5051-4559-800d-50c37e0250a0/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/rhobalas",
+    "appService.deploySubpath": ""
+}

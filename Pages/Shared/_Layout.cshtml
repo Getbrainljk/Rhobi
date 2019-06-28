@@ -11,7 +11,7 @@
     </environment>
     <environment exclude="Development">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+       <!-- asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />-->
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true"/>
       </environment>
     </head>
@@ -21,7 +21,7 @@
           <a class="logo" href="/">
             <img src="~/images/rhobiico.png" width="50" height="40" alt="rhobiico">
           </a>
-          <a asp-page="/Index" class="navbar-brand">RHOBALAS
+          <a asp-page="/Index" class="navbar-brand font-face">RHOBALAS
           </a>
         </div>
           <div class="collapse navbar-collapse">
@@ -51,7 +51,7 @@
       <partial name="_CookieConsentPartial"/>
 
       @RenderBody()
-      <hr/>
+      
       <div class="check-me-container">
         <div class="check-me-sub-container">
             <h5 class="mb-1 noselect">Check me out! </h5>
@@ -76,8 +76,8 @@
         </div>
         <div class="col-lg 3 col-md-3 col-sm-12 col-xs-12 card" style="width: 18rem;">
             <div class="card-body">
-                <p class="card-text text-white noselect">Presentation du streamer blabla bla ancelin valentin le plu forPresentation du streamer blabla bla ancelin valentin le plu forPresentation du streamer blabla bla ancelin valentin le plu forPresentation du streamer blabla bla ancelin valentin le plu for</p>
-                <p class="card-text text-white noselect">Rhobalas</p>
+                <p class="card-text text-white noselect">Une petite présentation de Valentin ne serait pas de refus:)</p>
+                <p class="card-text text-white noselect signature">RHOBALAS</p>
             </div>
         </div>
         <div class="card col-lg 3 col-md-3 col-sm-12 col-xs-12 " style="width: 18rem;">

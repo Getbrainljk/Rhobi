@@ -4,39 +4,35 @@
     ViewData["Title"] = "News";
 }
 
-<h2 class="text-center block">Rhobalas News</h2>
-<div class="container text-center block">
-    <div class="container blockbot">
+
+<div class="row blocktop blockbot">
+<div class="container text-center">
     <!-- Nav tabs --! !! !!!-->
-        <ul class="nav nav-justified" data-toggle="collapse" id="nav-tabs" role="tablist">
-            <li role="presentation" class="active">
-                <a href="#yt" aria-controls="yt" role="tab" data-toggle="tab">
-                    <img class="img-circle" src="~/images/yt.png" height=80px width= 80px/>
+    <h2 class="text-center">Rhobalas News</h2>
+        <ul class="nav nav-justified" data-toggle="collapse" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" href="#yt" id ="yt-tab" aria-controls="yt" role="tab" data-toggle="tab"aria-selected="true">
+                    <img class="img-circle" src="~/images/yt.png" height=80px width= 80px />
                 </a>
             </li>
-            <li role="presentation">
-                <a href="#tw" aria-controls="tw" role="tab" data-toggle="tab">
-                    <img class="img-circle" src="~/images/tw.png" height=80px width= 80px/>
+            <li class="nav-item">
+                <a class="nav-link" href="#tw" id="tw-tab" aria-controls="tw" role="tab" data-toggle="tab" aria-selected="false">
+                    <img class="img-circle" src="~/images/tw.png" height=80px width= 80px />
                 </a>
             </li>
         </ul>
-    </div>
-    <!-- Tab panes -->
     <div class="tab-content" id="myTabContent">
-    <div role="tabpanel" class="tab-pane fade show active" id="yt">
-         <div class="tab-inner">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed?listType=playlist&list=UU1OjGAD8ViSm9X9dNW7l_nA&index=2&t=0s&fs=0" ></iframe>
+        <div class="tab-pane fade show active" id="yt" aria-labelledby="yt-tab" role="tabpanel">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed?listType=playlist&list=UU1OjGAD8ViSm9X9dNW7l_nA&index=2&t=0s&fs=0" ></iframe>
             </div>
         </div>
+        <div  class="tab-pane fade" id="tw" aria-labelledby="tw-tab" role="tabpanel">
+                <div id="container">
+                    <a class="twitter-timeline" data-theme="dark" width="75%" href="https://twitter.com/Rhobalasv2?ref_src=twsrc%5Etfw">Tweets by Rhobalasv2</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>                    
+                </div>
+        </div>
     </div>
-    <div role="tabpanel" class="tab-pane fade" id="tw">
-        <div class="tab-inner">
-            <div id="container">
-                <a class="twitter-timeline" data-theme="dark" width="75%" href="https://twitter.com/Rhobalasv2?ref_src=twsrc%5Etfw">Tweets by Rhobalasv2</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>                    
-            </div>
-        </div> 
-    </div>
-    </div>
+</div>
 </div>

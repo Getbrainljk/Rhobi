@@ -4,6 +4,7 @@
     ViewData["Title"] = "Home";
 }
 
+<div class="text-center blocktop blockbot">
 <!-- Add a placeholder for the Twitch embed -->
     <div id="twitch-embed"></div>
 
@@ -13,11 +14,12 @@
     <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
     <script type="text/javascript">
       new Twitch.Embed("twitch-embed", {
-        width: "100%",
-        height: "600px",
+        width: "90%",
+        height: "800px",
         channel: "rhobalas_lol",
         allowfullscreen:true,
         theme:"dark",
         //video:443029440
       });
     </script>
+  </div>
