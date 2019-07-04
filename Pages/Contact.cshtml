@@ -4,70 +4,68 @@
   ViewData["Title"] = "Contact";
 }
 
-
-<div class="container-fluid block contact">
-  <div class="row blocktop blockbot">
-    <div class="col-lg-8 col-lg-offset-2">
-      <div id="container">  
-        <div class="container-custom">
-          <a class="logo contact">
-            <img src="~/images/RhobiSmart.png" width="30px" height="30px" alt="rhobismart"/>
-          </a>
+<div class="container-fluid contact">
+  <div class="row">
+    <div class="col-lg-7 col-lg-offset-2">
+      <div class="container-custom">
+        <a class="contact title">
+          <img class="logo contact" src="~/images/RhobiSmart.png" width="30px" height="30px" alt="rhobismart"/>
           <h2>@ViewData["Title"]</h2>
-          <div class="well">
-          A proposition, a question or a comment? Feel free to fill this form, we will get back to you as soon as possible.
-          </div>
-          <form id="contact-form" method="post" action="" role="form">
-            <div class="messages"></div>
+        </a>
+        <div class="well">
+          Une proposition, une question ou un commentaire ?
+          <!--A proposition, a question or a comment? Feel free to fill this form, we will get back to you as soon as possible.-->
+        </div>
+        <div class="well">
+          N'hésitez pas à remplir ce formulaire, nous reviendrons vers vous vers les plus bref délais.
+        </div>
+        <div class="container">
+          <form name="contact-form" class="form-line-active" role="form" onclick="isBlank()" method="post">
             <hr>
-            <div class="controls">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="form_lastname">Full Name *</label>
-                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required."/>
-                    <div class="help-block with-errors"></div>
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label name="form_name">Nom complet *</label>
+                      <!-- backend ! add action=".cshtml " et gerer coté server -->
+                      <input id="form_lastname" type="text" name="fullname" class="form-control" placeholder="Renseigner votre nom complet *" required="required" data-error="Lastname is required."/>
+                      <div class="help-block with-errors"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="form_email">Email *</label>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required."/>
-                    <div class="help-block with-errors"></div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_email">Email *</label>
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Renseigner votre email *" required="required" data-error="Valid email is required."/>
+                      <div class="help-block with-errors"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="form_phone">Phone</label>
-                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone"/>
-                    <div class="help-block with-errors"></div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_phone">Telephone</label>
+                      <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Renseigner numéro de tél"/>
+                      <div class="help-block with-errors"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="form_message">Message *</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                    <div class="help-block with-errors"></div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_message">Message *</label>
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Votre message *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
                   </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="btn btn-dark" value="Submit">Envoyer le message</button>
+                  </form>
                 </div>
-                <div class="col-md-12">
-                  <input type="submit" class="btn btn-success btn-send" value="Send message"/>
               </div>
-
-
             </div>
-          </form>
-
-      </div>
+          </div>
         </div>
       </div>
-  </div>
-</div>
+    </div>
