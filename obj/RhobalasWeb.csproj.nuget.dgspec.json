@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\50448\\Documents\\Rhobi\\temp2\\RhobalasWeb\\RhobalasWeb.csproj": {}
+    "c:\\Users\\50448\\Documents\\Rhobi\\temp2\\RhobalasWeb\\RhobalasWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\50448\\Documents\\Rhobi\\temp2\\RhobalasWeb\\RhobalasWeb.csproj": {
+    "c:\\Users\\50448\\Documents\\Rhobi\\temp2\\RhobalasWeb\\RhobalasWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\50448\\Documents\\Rhobi\\temp2\\RhobalasWeb\\RhobalasWeb.csproj",
+        "projectUniqueName": "c:\\Users\\50448\\Documents\\Rhobi\\temp2\\RhobalasWeb\\RhobalasWeb.csproj",
         "projectName": "RhobalasWeb",
-        "projectPath": "C:\\Users\\50448\\Documents\\Rhobi\\temp2\\RhobalasWeb\\RhobalasWeb.csproj",
+        "projectPath": "c:\\Users\\50448\\Documents\\Rhobi\\temp2\\RhobalasWeb\\RhobalasWeb.csproj",
         "packagesPath": "C:\\Users\\50448\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\50448\\Documents\\Rhobi\\temp2\\RhobalasWeb\\obj\\",
+        "outputPath": "c:\\Users\\50448\\Documents\\Rhobi\\temp2\\RhobalasWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

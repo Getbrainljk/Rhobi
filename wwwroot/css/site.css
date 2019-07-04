@@ -10,6 +10,13 @@ html, body {
 }
 .team {
   padding-top:50px;
+
+}
+.marge {
+  margin-top:30px;
+}
+.smarge {
+  margin-top:10px;
 }
 .wrapper {
   min-height: 100%;
